@@ -32,6 +32,10 @@
     {
       "source": "/pools/:address",
       "destination": "/index.html"
+    },
+    {
+      "source": "/setup",
+      "destination": "/setup.html"
     }
   ],
   "headers": [

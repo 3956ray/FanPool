@@ -43,7 +43,7 @@ export async function handler(req,res){
   if(req.method!=='GET'){res.writeHead(405);res.end();return;}
   if(path==='/api/config'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(config));return;}
   if(path.startsWith('/api/')){res.writeHead(404);res.end();return;}
-  const asset=/\.[^/]+$/.test(path);const file=resolve('dist-public',asset?'.'+path:'index.html'),root=resolve('dist-public')+sep;
+  const asset=/\.[^/]+$/.test(path);const file=resolve('dist-public',asset?'.'+path:path==='/setup'?'setup.html':'index.html'),root=resolve('dist-public')+sep;
   if(!file.startsWith(root)){res.writeHead(404);res.end();return;}
   try{res.setHeader('Content-Type',file.endsWith('.js')?'application/javascript':file.endsWith('.css')?'text/css':file.endsWith('.svg')?'image/svg+xml':'text/html; charset=utf-8');res.end(await readFile(file));}catch{res.writeHead(404);res.end('Not found');}
 }
