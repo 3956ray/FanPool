@@ -1,0 +1,12 @@
+{
+  "scope": "eth_estimateGas on dedicated Anvil 8549, no transaction sent; NOT Monad gas estimate",
+  "gas": {
+    "MockUSDC": "513002",
+    "FanPoolFactory": "2020005",
+    "mint1000Mock": "51279"
+  },
+  "twoWalletSetupGas": "2635565",
+  "illustrativeBudgetAt100GweiWith2xMarginMON": "0.527113",
+  "priceIsAssumption": true,
+  "requiredGate": "Re-estimate exact unsigned transactions on Monad and inspect wallet fee before every signature."
+}

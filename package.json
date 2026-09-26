@@ -1,0 +1,29 @@
+{
+  "name": "fanpool-local-demo",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "build": "node scripts/local/build.mjs",
+    "start": "node scripts/local/start.mjs",
+    "test:ui": "node --test test/ui/*.test.mjs",
+    "test:integration": "node test/ui/integration.mjs",
+    "build:public": "node scripts/build-public.mjs",
+    "start:public": "node server/public.mjs",
+    "test:auth": "node --test test/auth/*.test.mjs"
+  },
+  "dependencies": {
+    "@reown/appkit": "1.8.24",
+    "@reown/appkit-adapter-ethers": "1.8.24",
+    "@supabase/supabase-js": "2.117.1",
+    "ethers": "6.15.0",
+    "pg": "8.23.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
