@@ -1,11 +1,12 @@
-import {JsonRpcProvider,Contract,Interface,isAddress,keccak256} from 'ethers';
+import {Contract,Interface,isAddress,keccak256} from 'ethers';
+import {PublicReadProvider} from './read-provider.mjs';
 import ABI from './abi.json' with {type:'json'};
 import {validateNumbers,safeReference} from './domain.mjs';
 import {sourceVerifier} from './source.mjs';
 import {wallet,confirmed} from './wallet.mjs';
 export {ABI};
 let readProvider;
-export function configure(cfg){if(!cfg.rpc||new URL(cfg.rpc).protocol!=='https:')throw Error('测试网RPC需HTTPS。');readProvider=new JsonRpcProvider(cfg.rpc,10143,{cacheTimeout:-1});}
+export function configure(cfg){if(!cfg.rpc||new URL(cfg.rpc).protocol!=='https:')throw Error('测试网RPC需HTTPS。');readProvider=new PublicReadProvider(cfg.rpc);}
 
 export function connect(){return new Proxy({}, {get:(_,key)=>{if(!readProvider)throw Error('部署待配置。');const value=readProvider[key];return typeof value==='function'?value.bind(readProvider):value;}});}
 export async function assertLocal(provider,cfg){
@@ -55,6 +56,6 @@ export async function snapshot(provider,cfg,address,{creationTx,beneficiary,hist
  return {...data,address,members,events,historyComplete,sync:history?.sync||null,balance,liability,surplus:liability===null?null:balance-liability,terminalCoverage,historicalRefunded:history?.eventsComplete?events.filter(e=>e.name==='RefundClaimed').reduce((n,e)=>n+e.args.amount,0n):null,refunded:data.state<3n?0n:terminalCoverage?BigInt(members.filter(m=>m.active&&m.claimed).length)*(data.state===3n?data.commitment:data.reserve-data.s):null,paidItem:data.state===2n||data.state===4n?data.item*data.lockedN:0n,paidShipping:data.s*data.lockedN,paidFee:data.feeClaimed?data.fee*data.lockedN:0n,blockNumber:Number(block.number),blockHash:block.hash,now:Number(block.timestamp)};
 }
 const ERRORS={WrongState:'当前链上状态不允许此操作。请刷新后重试。',WrongTime:'尚未到期限或操作期限已过。请按链上时间推进。',Unauthorized:'只有池的组织者可以执行这项操作。',InvalidMember:'该地址已加入，或没有当前池的退款权益。',AlreadyClaimed:'该权益已处理，不会重复支付。',FulfillmentRejected:'运费超过每地址预留上限，或运输付款已执行。未改变资金。',InvalidConfig:'池配置不符合固定资金规则。',InexactTransfer:'转账金额不精确，交易已回滚。'};
-export function friendlyError(e){for(const d of [e?.data,e?.info?.error?.data?.data,e?.info?.error?.data])if(typeof d==='string'){try{const p=new Interface(ABI.FanPool).parseError(d);if(ERRORS[p?.name])return ERRORS[p.name]}catch{}}
+export function friendlyError(e){if(e?.info?.error?.code===-32011)return '公共RPC读取限流，请稍后刷新；不要重复创建资金池。';for(const d of [e?.data,e?.info?.error?.data?.data,e?.info?.error?.data])if(typeof d==='string'){try{const p=new Interface(ABI.FanPool).parseError(d);if(ERRORS[p?.name])return ERRORS[p.name]}catch{}}
   return e?.shortMessage||e?.message||'测试网操作失败，请检查服务后刷新。';
 }
