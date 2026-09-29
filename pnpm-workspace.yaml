@@ -1,0 +1,4 @@
+# Only reviewed, locked lifecycle scripts; unlisted builds remain errors.
+allowBuilds:
+  '@reown/appkit@1.8.24': true
+  'esbuild@0.25.10': true

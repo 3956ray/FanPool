@@ -1,0 +1,22 @@
+[
+  {
+    "round": 1,
+    "session": "e0afb481-ba07-4fda-9ce0-0caac31ef53b",
+    "seedMs": 15255,
+    "demoMs": 60002,
+    "confirmedTransactions": 12,
+    "serverPid": 40882,
+    "seedFile": "docs/evidence/cp3/seed-1.json",
+    "runFile": "docs/evidence/cp3/run-1.json"
+  },
+  {
+    "round": 2,
+    "session": "e99c4a97-9954-4dce-8b0f-ca7ffb40e05c",
+    "seedMs": 15274,
+    "demoMs": 60002,
+    "confirmedTransactions": 12,
+    "serverPid": 41017,
+    "seedFile": "docs/evidence/cp3/seed-2.json",
+    "runFile": "docs/evidence/cp3/run-2.json"
+  }
+]

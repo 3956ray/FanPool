@@ -1,0 +1,322 @@
+{
+  "session": "e0afb481-ba07-4fda-9ce0-0caac31ef53b",
+  "anchor": {
+    "number": "0x8",
+    "hash": "0xc8b947b2a32940bbe7b9558495ce4c9a3962fc82c94b390564db0d53be29520b"
+  },
+  "seedMs": 15255,
+  "demoMs": 60002,
+  "paced": true,
+  "normal": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+  "timeout": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+  "transactions": [
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "method": "paySupplier",
+      "args": [],
+      "hash": "0xcc035516d48fdda52daf2e0639d02cf1dded369de4ef61f74dbbb380c72200ff",
+      "status": 1,
+      "blockNumber": 33,
+      "elapsedMs": 9004
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "method": "payFulfillment",
+      "args": [
+        "2000000"
+      ],
+      "hash": "0x6fda1e9cd7fd01e825764a478cd7305ce9535c9a1baec5b219d96a9801e5a7d7",
+      "status": 1,
+      "blockNumber": 48,
+      "elapsedMs": 24009
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "method": "closeNormal",
+      "args": [],
+      "hash": "0x71ac60909970a551ceccd373716864fa7e838640fdba440b17244de2fd6e77a1",
+      "status": 1,
+      "blockNumber": 54,
+      "elapsedMs": 29983
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+      ],
+      "hash": "0x8b740a3eff26321acf9b966335f952f48e4954bf3c4766679aadb58b7bd89fbc",
+      "status": 1,
+      "blockNumber": 58,
+      "elapsedMs": 33966
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+      ],
+      "hash": "0xd7fc8bb594881bfa31189360608a404ab9716515ac46c461412c79210a608975",
+      "status": 1,
+      "blockNumber": 59,
+      "elapsedMs": 34948
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "hash": "0x489988417ac49d5af5e675989eb0f6fc4987287b30898b95624f3b18efed2e13",
+      "status": 1,
+      "blockNumber": 60,
+      "elapsedMs": 35933
+    },
+    {
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimFee",
+      "args": [],
+      "hash": "0xce157df4bfa2929ca5da0008996418738962cf9405d57986c2ea2fd8edf89611",
+      "status": 1,
+      "blockNumber": 61,
+      "elapsedMs": 36917
+    },
+    {
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "closeTimeout",
+      "args": [],
+      "hash": "0x061aaa9f219149ae8bf014f397c57a4548427500be111ef1a32f4ccb1347baf8",
+      "status": 1,
+      "blockNumber": 71,
+      "elapsedMs": 46056
+    },
+    {
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+      ],
+      "hash": "0x19c8d31f32176541362fee5357eef1cfd60f483c4d0c9d29ffd1f654e5d56bfc",
+      "status": 1,
+      "blockNumber": 72,
+      "elapsedMs": 47024
+    },
+    {
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+      ],
+      "hash": "0xb43fc5f03acf2f65b92bf28266d1dcd81a5c20c97f80ee80aa47402616971834",
+      "status": 1,
+      "blockNumber": 73,
+      "elapsedMs": 48002
+    },
+    {
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimRefundFor",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "hash": "0x83fd9123dbe44b3bd9f7516f2cebd7068d30bb2cd024b1df1f0675d93277c05f",
+      "status": 1,
+      "blockNumber": 74,
+      "elapsedMs": 49000
+    },
+    {
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "method": "claimFee",
+      "args": [],
+      "hash": "0x560bce73fa6fdf11b56582b536915ded3319f84412e83d3fe7aaf4e17d55864e",
+      "status": 1,
+      "blockNumber": 75,
+      "elapsedMs": 49998
+    }
+  ],
+  "rejection": {
+    "type": "eth_call_static_simulation",
+    "broadcast": false,
+    "transactionHash": null,
+    "error": "FulfillmentRejected",
+    "message": "运费超过每地址预留上限，或运输付款已执行。未改变资金。"
+  },
+  "stages": [
+    {
+      "label": "本地MOCK预置展示：I10+R4+F1=C15；池A已预置READY/N3/45，池B已预置采购后失联。准备耗时不计入本演示。",
+      "elapsedMs": 2
+    },
+    {
+      "label": "精确商品付款30，只到固定supplier",
+      "elapsedMs": 8002
+    },
+    {
+      "label": "s=5策略拒绝：eth_call静态模拟，无失败交易hash，不广播失败交易",
+      "elapsedMs": 15001
+    },
+    {
+      "label": "合法s=2，运输总额6",
+      "elapsedMs": 23002
+    },
+    {
+      "label": "正常关闭只是资金操作结束，不是实物送达",
+      "elapsedMs": 29001
+    },
+    {
+      "label": "旁观者替三地址各领2，再向organizer付采购费3",
+      "elapsedMs": 33002
+    },
+    {
+      "label": "切到预置失联池B：显式快进本地链时间，任何人关闭；不回收已付商品款",
+      "elapsedMs": 45002
+    },
+    {
+      "label": "完成：两池0余额；全部受益人正确。MOCK无真实价值，不保证实物，CP4未授权。",
+      "elapsedMs": 60002
+    }
+  ],
+  "initial": {
+    "blockNumber": 24,
+    "blockHash": "0x6faaaa068e2b23c19b983fa9db9514bac88a6fcd93ece2e8f13c750c4557b10b",
+    "balances": {
+      "organizer": {
+        "address": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "balance": "1000000000"
+      },
+      "member1": {
+        "address": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        "balance": "970000000"
+      },
+      "member2": {
+        "address": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "balance": "970000000"
+      },
+      "member3": {
+        "address": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        "balance": "970000000"
+      },
+      "observer": {
+        "address": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+        "balance": "1000000000"
+      },
+      "supplier": {
+        "address": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+        "balance": "30000000"
+      },
+      "fulfillment": {
+        "address": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+        "balance": "0"
+      },
+      "normal": {
+        "address": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+        "balance": "45000000"
+      },
+      "timeout": {
+        "address": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+        "balance": "15000000"
+      }
+    }
+  },
+  "normalAfter": {
+    "blockNumber": 61,
+    "blockHash": "0x7fa3bb7132e465186cafa1be64ef24a3e04eca08d92dbebfd5c6698154eed6a8",
+    "balances": {
+      "organizer": {
+        "address": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "balance": "1003000000"
+      },
+      "member1": {
+        "address": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        "balance": "972000000"
+      },
+      "member2": {
+        "address": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "balance": "972000000"
+      },
+      "member3": {
+        "address": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        "balance": "972000000"
+      },
+      "observer": {
+        "address": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+        "balance": "1000000000"
+      },
+      "supplier": {
+        "address": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+        "balance": "60000000"
+      },
+      "fulfillment": {
+        "address": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+        "balance": "6000000"
+      },
+      "normal": {
+        "address": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+        "balance": "0"
+      },
+      "timeout": {
+        "address": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+        "balance": "15000000"
+      }
+    }
+  },
+  "final": {
+    "blockNumber": 75,
+    "blockHash": "0xd29b5fee3ebc4915fdb6590f67692b1ac344c184e0ea270addb40ed79d18613b",
+    "balances": {
+      "organizer": {
+        "address": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "balance": "1006000000"
+      },
+      "member1": {
+        "address": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        "balance": "976000000"
+      },
+      "member2": {
+        "address": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "balance": "976000000"
+      },
+      "member3": {
+        "address": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        "balance": "976000000"
+      },
+      "observer": {
+        "address": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+        "balance": "1000000000"
+      },
+      "supplier": {
+        "address": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+        "balance": "60000000"
+      },
+      "fulfillment": {
+        "address": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+        "balance": "6000000"
+      },
+      "normal": {
+        "address": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+        "balance": "0"
+      },
+      "timeout": {
+        "address": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+        "balance": "0"
+      }
+    }
+  },
+  "checks": {
+    "allReceiptsStatus1": true,
+    "normalConservation": true,
+    "timeoutConservation": true,
+    "allBeneficiaryDeltas": true,
+    "noFailedTransactionInvented": true
+  }
+}

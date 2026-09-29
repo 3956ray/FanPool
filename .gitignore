@@ -1,0 +1,12 @@
+.tools/
+out/
+cache/
+broadcast/
+lib/
+node_modules/
+dist/
+.local/
+dist-public/
+.env
+.env.*
+!.env.example

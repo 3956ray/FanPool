@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "session": "e99c4a97-9954-4dce-8b0f-ca7ffb40e05c",
+  "anchor": {
+    "number": "0x8",
+    "hash": "0x8603bc0091a61e59e682ec97b9e523a5570b0e8531d00d4822ed38624c8d76d5"
+  },
+  "normal": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+  "timeout": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+  "normalURL": "http://127.0.0.1:4173/?pool=0xCafac3dD18aC6c6e92c921884f9E4176737C052c&session=e99c4a97-9954-4dce-8b0f-ca7ffb40e05c",
+  "timeoutURL": "http://127.0.0.1:4173/?pool=0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e&session=e99c4a97-9954-4dce-8b0f-ca7ffb40e05c",
+  "createdAt": "2026-09-24T21:19:34.935Z",
+  "seedMs": 15274,
+  "transactions": [
+    {
+      "hash": "0xa9f9c19a9bf78aefa6be9c8ebd53d288cfd10ab96de865502719f8af93052ecd",
+      "status": 1,
+      "method": "createPool",
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c"
+    },
+    {
+      "hash": "0x99d0d5733c07387706f51cf5c6f719f47c15391bb59ec58770ff256f80448576",
+      "status": 1,
+      "method": "createPool",
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e"
+    },
+    {
+      "hash": "0xde0d2d138a037880938438c0070f8cde28c748e5738d27249aa021085d29dec9",
+      "status": 1,
+      "blockNumber": 12,
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "method": "join"
+    },
+    {
+      "hash": "0x409c74b6c9be4ca2d7abddc7b2d48138d94202e01a79e7f957ed8043794809bc",
+      "status": 1,
+      "blockNumber": 14,
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "method": "join"
+    },
+    {
+      "hash": "0x3d477f4bfe0d20ee0f4ef4ebde03a9b118b50a668d5032886051bb6ddd441eb4",
+      "status": 1,
+      "blockNumber": 16,
+      "pool": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+      "actor": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "method": "join"
+    },
+    {
+      "hash": "0x84da01b2e98bbd6aa56289dec0e3155ca3e6d3213617fe392d09117ed9da5ed3",
+      "status": 1,
+      "blockNumber": 18,
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "method": "join"
+    },
+    {
+      "hash": "0x2b31a856209925d95fe249c4bbc3d01b1e1a29a975d956298c050ece5181000e",
+      "status": 1,
+      "blockNumber": 20,
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "method": "join"
+    },
+    {
+      "hash": "0xcf721fcc35f94130f77ec11901a7bb7e62aa33a6efff4bef87eb764f0c8eb8f4",
+      "status": 1,
+      "blockNumber": 22,
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+      "method": "join"
+    },
+    {
+      "hash": "0x218c2d2ab6050d6de3206671c401ff8ae4cdfb498563d8b50faa424cc0f83403",
+      "status": 1,
+      "blockNumber": 23,
+      "pool": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+      "actor": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "method": "paySupplier"
+    }
+  ],
+  "ledger": {
+    "blockNumber": 23,
+    "blockHash": "0x3ac6fef890415377752b835226a522b29cf74ed9bf137bf7f5b8b8d13ca2be60",
+    "balances": {
+      "organizer": {
+        "address": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "balance": "1000000000"
+      },
+      "member1": {
+        "address": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        "balance": "970000000"
+      },
+      "member2": {
+        "address": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "balance": "970000000"
+      },
+      "member3": {
+        "address": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        "balance": "970000000"
+      },
+      "observer": {
+        "address": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+        "balance": "1000000000"
+      },
+      "supplier": {
+        "address": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+        "balance": "30000000"
+      },
+      "fulfillment": {
+        "address": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+        "balance": "0"
+      },
+      "normal": {
+        "address": "0xCafac3dD18aC6c6e92c921884f9E4176737C052c",
+        "balance": "45000000"
+      },
+      "timeout": {
+        "address": "0x9f1ac54BEF0DD2f6f3462EA0fa94fC62300d3a8e",
+        "balance": "15000000"
+      }
+    }
+  },
+  "stages": {
+    "normal": "PRESEEDED_READY_N3_45_MOCK",
+    "timeout": "PRESEEDED_PURCHASED_N3_15_MOCK"
+  }
+}
