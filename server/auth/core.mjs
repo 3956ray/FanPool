@@ -36,7 +36,7 @@ export class AuthService {
     const claims=c?.claims,user=u?.user;
     if(ue||ce||!user||!claims||claims.sub!==user.id||!claims.session_id||!claims.exp||claims.exp<=Date.now()/1000)throw fail(401,'身份会话验证失败。');
     const identities=user.identities||[];
-    const valid=identities.some(i=>i.provider==='web3'&&i.identity_data?.chain==='ethereum'&&typeof i.identity_data.address==='string'&&wallet(i.identity_data.address)===expectedWallet&&String(i.id).toLowerCase()===`web3:ethereum:${expectedWallet}`);
+    const valid=identities.some(i=>{const data=i.identity_data,custom=data?.custom_claims,subject=`web3:ethereum:${expectedWallet}`;return i.provider==='web3'&&custom?.chain==='ethereum'&&String(custom.network)===String(CHAIN)&&typeof custom.address==='string'&&wallet(custom.address)===expectedWallet&&typeof i.id==='string'&&i.id.toLowerCase()===subject&&typeof data.sub==='string'&&data.sub.toLowerCase()===subject;});
     if(!valid)throw fail(401,'已验证的钱包身份不匹配。');
     return {uid:user.id,sid:claims.session_id,wallet:expectedWallet,chain_id:CHAIN,exp:claims.exp};
   }
